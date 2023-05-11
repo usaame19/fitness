@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+
+/* CSS VARIABLES */
+
+
+:root{
+    
+    /* colors */
+    --primary-color: #f8bc1a;
+    --second-color: #3C0E78;
+    --third-color: #161616;
+    --fourth-color: #F4F3F3;
+
+    /* fonts  */
+    --primary-font-family: 'Poppins', sans-serif;
+    --primary-font-color: #040000;
+    --secondary-font-color: #FFFFFF;
+
+    /* btn colors */
+    --btnBlack: #151615;
+    --btnWhite: #f4f3f3;
+}
+
+
+/* CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--primary-font-family);
+    width: 100%;
+
+}
+
+header{
+    height: 80px;
+    background-color: var(--fourth-color);
+    align-items: center;
+}
+.container{
+    margin: 0 90px;
+}
+.section-1{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--primary-font-color);
+    display: flex;
+}
+
+.logo a img{
+    width: 35px;
+}
+.logo span{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+.nav-1 img{
+    width: 22px;
+    margin-right: 15px;
+}
+
+.nav-1 a{
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-size: 1rem;
+    display: flex;
+}
+
+.hero{
+    width: 100%;
+    height: 560px;
+    background-image:  url(../images/big/slider-bg.jpg);
+    background-size: cover;
+}
+.menu-bar{
+    display: none;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    margin: auto;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-size: 1rem;
+    text-align: center;
+}
+nav ul li a:hover{
+    color: var(--secondary-font-color);
+}
+
+.hero-flex{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 80px;
+}
+
+
+.fitness h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.fitness h1{
+    color: var(--secondary-font-color);
+    font-size: 4rem;
+}
+.fitness p{
+    font-size: 1rem;
+    color: var(--secondary-font-color);
+}
+.button{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-1{
+    width: 165px;
+    height: 40px;
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 4px;
+}
+
+.btn-2{
+    background-color: var(--secondary-font-color);
+    color: var(--primary-font-color);
+}
+
+.button a{
+    text-decoration: none;
+    color: var(--primary-font-color);
+
+}
+
+.section-2{
+    height: 600px;
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section-2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.section-2 a{
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+.heading h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+.heading h2 hr{
+    color: var(--primary-color);
+    border: none;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 5px;
+    border-radius: 4px;
+    margin: auto;
+}
+.heading-service h2{
+    margin: 90px;
+}
+.section-3{
+    margin: 0 0 0 100px;
+}
+
+.box-one{
+    width: 94%;
+    height: 321px;
+    margin-bottom: 30px;
+
+}
+.box img{
+    width: 94%;
+    height: auto;
+}
+.visible_text{
+    position: relative;
+    top: -45px;
+    color: var(--secondary-font-color);
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.box-center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.box-center h6{
+    text-align: center;
+    color: var(--secondary-font-color);
+    font-size: 1rem;
+    padding-top: 10px;
+}
+.box-bg img{
+    margin-top: 20%;
+}
+.box-bg{
+    width: 55px;
+    height: 55px;
+    background-color: var(--primary-color);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100%;
+}
+.box-center-bg{
+    background-color: rgba(67, 17, 125, 0.9);
+    width: 94%;
+    height: 98%;
+    position: relative;
+    top: -315px;
+    display: none;
+
+}
+.box-center{
+    padding-top: 20%;
+}
+
+.box-one:hover .box-center-bg{
+    display: block;
+}
+.box-one:hover .box h6{
+    display: none;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
