@@ -37,18 +37,6 @@ display: none;
 
 }
 
-.box-one{
-    width: 94%;
-    height: 185px;
-    margin: 20px;
-}
-.box-center-bg{
-    width: 94%;
-    height: 195px;
-    position: relative;
-    top: -194px;
-    display: none;  
-}
 
 .hero{
     background-image:  url(../images/big/slider-bg.jpg);
@@ -87,6 +75,25 @@ display: none;
 .heading-service h2{
     margin: 22px;
 }
-.section-3{
-    margin: 0;
+
+
+.services-container {
+    grid-template-columns: 1fr;
+}
+
+.box-one{
+    margin-left: 15px;
+}
+.image {
+    width: 95%;
+    height: 300px;
+    }
+    
+.image img {
+    width: 100%;
+    }
+.box, .box-hover{
+    width: 95%;
+    margin: 0 auto;
+
 }

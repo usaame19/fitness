@@ -201,69 +201,74 @@ nav ul li a:hover{
 .heading-service h2{
     margin: 90px;
 }
-.section-3{
-    margin: 0 0 0 100px;
-}
+.box-one {
+    margin-left: 40px;
+} 
 
-.box-one{
-    width: 94%;
-    height: 321px;
-    margin-bottom: 30px;
-
-}
-.box img{
-    width: 94%;
-    height: auto;
-}
-.visible_text{
+.box {
     position: relative;
-    top: -45px;
-    color: var(--secondary-font-color);
-    font-size: 1rem;
-    padding-left: 10px;
+    width: 550px;
+    height: 300px;
+    cursor: pointer;
 }
-.box-center{
+.image {
+width: 100%;
+height: 300px;
+}
+
+.image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+.box:hover .box-hover {
+    visibility: visible;
+}
+
+.box-hover {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(60, 14, 120, 0.8);
+    width: 550px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-}
-.box-center h6{
-    text-align: center;
     color: var(--secondary-font-color);
-    font-size: 1rem;
-    padding-top: 10px;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
 }
-.box-bg img{
-    margin-top: 20%;
-}
-.box-bg{
-    width: 55px;
-    height: 55px;
+
+.box-hover .link {
+    margin-bottom: 1.2rem;
     background-color: var(--primary-color);
-    margin-right: auto;
-    margin-left: auto;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
 }
-.box-center-bg{
-    background-color: rgba(67, 17, 125, 0.9);
-    width: 94%;
-    height: 98%;
-    position: relative;
-    top: -315px;
-    display: none;
 
-}
-.box-center{
-    padding-top: 20%;
+.link img {
+    margin: 10px;
 }
 
-.box-one:hover .box-center-bg{
-    display: block;
+.text-1 {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    color: var(--secondary-font-color);
 }
-.box-one:hover .box h6{
-    display: none;
+
+.box:hover .text-1 {
+    visibility: hidden;
 }
-.services-container{
+
+.services-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-gap: 30px;
 }
