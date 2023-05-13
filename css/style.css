@@ -152,7 +152,20 @@ nav ul li a:hover{
     padding-top: 8px;
     border-radius: 4px;
 }
+.btn-1:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-font-color);
+}
 
+.btn-2:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--btnWhite);
+    color: var(--third-color);
+}
+.btn-3:hover{
+    color: var(--second-color);
+}
 .btn-2{
     background-color: var(--secondary-font-color);
     color: var(--primary-font-color);
@@ -193,8 +206,9 @@ nav ul li a:hover{
     color: var(--primary-color);
     border: none;
     background-color: var(--primary-color);
-    width: 50px;
-    height: 5px;
+    opacity:1;
+    width: 60px;
+    height: 6px;
     border-radius: 4px;
     margin: auto;
 }
@@ -207,7 +221,7 @@ nav ul li a:hover{
 
 .box {
     position: relative;
-    width: 550px;
+    width: 610px;
     height: 300px;
     cursor: pointer;
 }
@@ -233,7 +247,7 @@ object-fit: cover;
     top: 0;
     left: 0;
     background-color: rgba(60, 14, 120, 0.8);
-    width: 550px;
+    width: 610px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -256,11 +270,14 @@ object-fit: cover;
 }
 
 .text-1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     left: 25px;
     bottom: 5px;
     color: var(--secondary-font-color);
+}
+.box h2{
+    font-size: 1.5rem;
 }
 
 .box:hover .text-1 {
@@ -271,4 +288,161 @@ object-fit: cover;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-gap: 30px;
+}
+
+.section-3{
+    width: 100%;
+    height: 500px;
+    background-color: var(--second-color);
+    margin-top: 50px;
+}
+.why{
+    padding: 70px;
+    color: var(--secondary-font-color);
+}
+.box-rows{
+    width: 265px;
+    height: 220px;
+    color: var(--secondary-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-rows h2{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.box-flex{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+.customers{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.section-5{
+    margin-top: 100px;
+}
+
+.results{
+    display: flex;
+
+}
+.results img{
+    width: 50%;
+    height: 100%;
+}
+.results-left{
+    width: 50%;
+    height: auto;
+    background-color: var(--second-color);
+    color: var(--secondary-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.results-in h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.best h2 hr{
+    color: var(--primary-color);
+    border: none;
+    background-color: var(--primary-color);
+    opacity: 1;
+    width: 50px;
+    height: 5px;
+    border-radius: 4px;
+}
+.results-in{
+    width: 50%;
+    margin-left: 40px;
+}
+
+
+.section-6{
+    margin-top: 80px;
+}
+.three{
+    margin: 2px;
+}
+form{
+    width: 50%;
+}
+input{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid var(--third-color);
+    margin: 5px;
+    /* margin-left: 30px; */
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0 0 70px;
+
+}
+#comment{
+}
+input:focus{
+    outline: none;
+}
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn-msg{
+    margin-left: 30px;
+
+}
+
+/* google map */
+.mapouter{
+    margin: 0 30px;
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 50%;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_iframe {
+    height: 400px !important;
+}
+
+.two-sides{
+    margin-top: 70px;
+    display: flex;
+    gap: 50px;
 }
