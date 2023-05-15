@@ -171,6 +171,10 @@ display: none;
 }
 .three{
     margin-bottom: 30px;
+
+}
+.two-sides form{
+    width: 80%;
 }
 form{
     width: 100%;
@@ -212,6 +216,9 @@ footer{
     flex-direction: column;
 }
 
+.news-sub form {
+    width: 80%;
+}
 
 /* last */
 .last{
