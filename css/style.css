@@ -106,6 +106,7 @@ nav{
     background-color: var(--primary-color);
     clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
 }
+
 nav ul{
     display: flex;
     gap: 50px;
