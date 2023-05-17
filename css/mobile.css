@@ -11,6 +11,10 @@ header{
     display: none;
 }
 
+.hero {
+        background-attachment: fixed;
+    }
+
 .section-1{
     display: block;
     text-align: center;

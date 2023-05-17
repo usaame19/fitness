@@ -87,6 +87,15 @@ header{
     background-image:  url(../images/big/slider-bg.jpg);
     background-size: cover;
 }
+
+/* about css */
+.heros{
+    background-color: var(--secondary-font-color);
+}
+
+.bag{
+    background-color: var(--secondary-font-color )!important;
+}
 .menu-bar{
     display: none;
 }
@@ -462,6 +471,8 @@ footer{
 
 .footer-rows{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about-ft{
     width: 20%;
@@ -550,11 +561,13 @@ footer{
 
 /* last */
 .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--third-color);
     width: 100%;
 }
 .last p{
-    width: 60%;
     margin: auto;
     color: var(--secondary-font-color);
 }
